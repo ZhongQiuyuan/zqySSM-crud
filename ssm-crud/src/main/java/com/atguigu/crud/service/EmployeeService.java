@@ -45,6 +45,9 @@ public class EmployeeService {
         return count==0;
     }
 
+    /*
+     * Description: 根据id获取员工对象
+     */
     public Employee getEmp(Integer id) {
         Employee employee = employeeMapper.selectByPrimaryKey(id);
         return employee;
