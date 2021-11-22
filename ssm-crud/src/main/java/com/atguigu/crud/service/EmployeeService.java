@@ -53,6 +53,9 @@ public class EmployeeService {
         return employee;
     }
 
+    /*
+     * Description: 更新员工
+     */
     public void updateEmp(Employee employee) {
         int i = employeeMapper.updateByPrimaryKeySelective(employee);
     }
